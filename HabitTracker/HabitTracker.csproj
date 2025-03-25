@@ -16,29 +16,4 @@
     <PackageReference Include="Microsoft.Identity.Web.DownstreamApi" Version="3.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-HabitTracker
-│
-├── Pages
-│   ├── Index.cshtml
-│   ├── Index.cshtml.cs
-│   └── Error.cshtml
-│
-├── Services
-│   ├── Interfaces
-│   │   ├── IGraphService.cs
-│   │   └── ILoggerService.cs
-│   └── Implementations
-│       ├── GraphService.cs
-│       └── LoggerService.cs
-│
-├── wwwroot
-│   ├── lib
-│   │   ├── jquery-validation
-│   │   └── jquery-validation-unobtrusive
-│
-└── Startup.cs
-    <Folder Include="servicers\" />
-  </ItemGroup>
-
 </Project>
