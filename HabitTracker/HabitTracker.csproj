@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-HabitTracker-36fa71e7-ed89-445d-b953-1534a325c6d9</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.3" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="9.0.3" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="3.2.2" />
+    <PackageReference Include="Microsoft.Identity.Web.MicrosoftGraph" Version="3.2.2" />
+    <PackageReference Include="Microsoft.Identity.Web.UI" Version="3.2.2" />
+    <PackageReference Include="Microsoft.Identity.Web.DownstreamApi" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+HabitTracker
+│
+├── Pages
+│   ├── Index.cshtml
+│   ├── Index.cshtml.cs
+│   └── Error.cshtml
+│
+├── Services
+│   ├── Interfaces
+│   │   ├── IGraphService.cs
+│   │   └── ILoggerService.cs
+│   └── Implementations
+│       ├── GraphService.cs
+│       └── LoggerService.cs
+│
+├── wwwroot
+│   ├── lib
+│   │   ├── jquery-validation
+│   │   └── jquery-validation-unobtrusive
+│
+└── Startup.cs
+    <Folder Include="servicers\" />
+  </ItemGroup>
+
+</Project>
