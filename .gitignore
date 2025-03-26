@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/HabitTracker/infra/main.bicep
+/HabitTracker/infra/main.bicep
