@@ -1,9 +1,12 @@
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.UI;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using HabitTracker.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +26,8 @@ builder.Services.AddAuthorization(options =>
 });
 builder.Services.AddRazorPages()
     .AddMicrosoftIdentityUI();
+builder.Services.AddDbContext<HabitTrackerContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("HabitTrackerContext") ?? throw new InvalidOperationException("Connection string 'HabitTrackerContext' not found.")));
 
 var app = builder.Build();
 
