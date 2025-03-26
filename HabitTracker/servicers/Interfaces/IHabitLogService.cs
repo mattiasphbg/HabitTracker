@@ -2,5 +2,7 @@
 {
     public interface IHabitLogService
     {
+        void Log(string message);
+        
     }
 }
