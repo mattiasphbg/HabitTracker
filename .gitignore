@@ -371,3 +371,4 @@ appsettings.json
 appsettings.*.json
 !appsettings.example.json
 
+/HabitTracker/appsettings.json
