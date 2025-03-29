@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /HabitTracker/infra/main.bicep
 /HabitTracker/infra/main.bicep
+/HabitTracker/infra/parameters.json
