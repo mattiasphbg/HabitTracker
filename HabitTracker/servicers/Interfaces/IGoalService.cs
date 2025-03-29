@@ -1,4 +1,6 @@
-﻿namespace HabitTracker.servicers.Interfaces
+﻿// 
+
+namespace HabitTracker.servicers.Interfaces
 {
     public interface IGoalService
     {
