@@ -364,3 +364,10 @@ FodyWeavers.xsd
 /HabitTracker/infra/main.bicep
 /HabitTracker/infra/main.bicep
 /HabitTracker/infra/parameters.json
+
+
+# Add sensitive files
+appsettings.json
+appsettings.*.json
+!appsettings.example.json
+
