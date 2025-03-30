@@ -14,6 +14,9 @@ namespace HabitTracker.Data
         {
         }
 
-        public DbSet<HabitTracker.Models.Habit> Habit { get; set; } = default!;
+        public DbSet<Habit> Habits { get; set; } = default!;
+        public DbSet<HabitLog> HabitLog { get; set; } = default!;
+        public DbSet<Goal> Goals { get; set; } = default!;
+        public DbSet<User> Users { get; set; } = default!;
     }
 }
