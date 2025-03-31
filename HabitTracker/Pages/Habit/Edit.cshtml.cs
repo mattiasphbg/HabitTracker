@@ -30,7 +30,7 @@ namespace HabitTracker.Pages.Habit
                 return NotFound();
             }
 
-            var habit =  await _context.Habit.FirstOrDefaultAsync(m => m.Id == id);
+            var habit =  await _context.Habits.FirstOrDefaultAsync(m => m.Id == id);
             if (habit == null)
             {
                 return NotFound();
@@ -71,7 +71,7 @@ namespace HabitTracker.Pages.Habit
 
         private bool HabitExists(Guid id)
         {
-            return _context.Habit.Any(e => e.Id == id);
+            return _context.Habits.Any(e => e.Id == id);
         }
     }
 }

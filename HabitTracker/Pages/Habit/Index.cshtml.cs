@@ -26,7 +26,7 @@ public class IndexModel : PageModel
 
         public async Task OnGetAsync()
         {
-            Habit = await _context.Habit.ToListAsync();
+            Habit = await _context.Habits.ToListAsync();
         }
     }
 }

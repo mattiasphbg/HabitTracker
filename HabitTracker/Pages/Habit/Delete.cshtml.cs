@@ -29,7 +29,7 @@ namespace HabitTracker.Pages.Habit
                 return NotFound();
             }
 
-            var habit = await _context.Habit.FirstOrDefaultAsync(m => m.Id == id);
+            var habit = await _context.Habits.FirstOrDefaultAsync(m => m.Id == id);
 
             if (habit is not null)
             {
@@ -48,11 +48,11 @@ namespace HabitTracker.Pages.Habit
                 return NotFound();
             }
 
-            var habit = await _context.Habit.FindAsync(id);
+            var habit = await _context.Habits.FindAsync(id);
             if (habit != null)
             {
                 Habit = habit;
-                _context.Habit.Remove(Habit);
+                _context.Habits.Remove(Habit);
                 await _context.SaveChangesAsync();
             }
 

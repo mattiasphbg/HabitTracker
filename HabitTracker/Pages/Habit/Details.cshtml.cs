@@ -28,7 +28,7 @@ namespace HabitTracker.Pages.Habit
                 return NotFound();
             }
 
-            var habit = await _context.Habit.FirstOrDefaultAsync(m => m.Id == id);
+            var habit = await _context.Habits.FirstOrDefaultAsync(m => m.Id == id);
 
             if (habit is not null)
             {

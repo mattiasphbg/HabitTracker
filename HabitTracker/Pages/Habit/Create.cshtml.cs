@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using HabitTracker.Data;
-using HabitTracker.Models;
 
 namespace HabitTracker.Pages.Habit
 {
@@ -35,7 +28,7 @@ namespace HabitTracker.Pages.Habit
                 return Page();
             }
 
-            _context.Habit.Add(Habit);
+            _context.Habits.Add(Habit);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
